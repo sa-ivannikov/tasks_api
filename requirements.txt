@@ -1,0 +1,14 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-RESTful
+Flask-Bcrypt
+psycopg2-binary
+bcrypt
+marshmallow
+PyJWT
+SQLAlchemy
+loguru
+connexion
+python-dotenv
+flask_script

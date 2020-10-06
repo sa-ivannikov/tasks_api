@@ -1,0 +1,22 @@
+version: '3.7'
+
+services: 
+    web:
+        build: .
+        command: flask run --host=0.0.0.0
+        volumes:
+            - .:/usr/src/app
+        ports: 
+            - 5000:5000
+        env_file:
+            - ./.env
+    db:
+        image: postgres
+        env_file: 
+            - ./db.env
+        ports:
+            - "5430:5432"
+        volumes:
+            - db-data:/var/lib/postgresql/data
+volumes:
+    db-data:
