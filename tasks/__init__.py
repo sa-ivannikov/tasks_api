@@ -36,10 +36,4 @@ def create_app(test_config=None):
     app.register_blueprint(user_api, url_prefix='/api/users')
     app.register_blueprint(tasks_api, url_prefix='/api/tasks')
 
-    
-    @app.route('/')
-    @Auth.auth_required
-    def test():
-        return 'IT WORKS'
-
     return app
