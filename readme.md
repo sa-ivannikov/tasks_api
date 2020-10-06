@@ -1,6 +1,6 @@
 ## Запустить локально через docker-compose:
 ```
-git clone {url}
+git clone https://github.com/sa-ivannikov/tasks_api
 docker-compose up -d
 docker-compose exec web python3 manage.py db init
 docker-compose exec web python3 manage.py db migrate
