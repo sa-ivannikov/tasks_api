@@ -6,7 +6,7 @@ docker-compose exec web python3 manage.py db init
 docker-compose exec web python3 manage.py db migrate
 docker-compose exec web python3 manage.py db upgrade
 ```
-В файлах специально оставил файлы с переменными окружения для упрощения запуска.
+Файлы с переменными окружения оставил специально для упрощения запуска. 
 
 ## API пользователей
 
